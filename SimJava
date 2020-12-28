@@ -50,8 +50,8 @@ public class Path {
     }
 
     public static void main(String[] args) {
-        Path path = new Path(""); //First half of cd command
-        path.cd(""); //Second half of cd command
+        Path path = new Path("/abc/def"); //First half of cd command
+        path.cd("ghi"); //Second half of cd command
         System.out.println(path.getPath());
     }
 }
