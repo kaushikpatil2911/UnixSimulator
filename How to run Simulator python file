@@ -1,0 +1,6 @@
+How to run Simulator python file
+
+1) Open Cmd/Terminal
+2) Go to path where Simulator.py file is
+3) then execute command "python3 Simulator.py"
+4) Execute the commands in given file
