@@ -6,7 +6,7 @@ def get_new_path (path, where):
         where = where[1:]
         if not where:
             return path 
-        where = where[1:]   # remove the slash
+        where = where[1:]
         return get_new_path (path, where)
     
     if where[0] == '..':
@@ -17,7 +17,7 @@ def get_new_path (path, where):
         path.pop()
         if not where:
             return path 
-        where = where[1:]    # remove the slash
+        where = where[1:]
         return get_new_path (path, where)
 
     if not where[0].isalnum():
@@ -30,7 +30,7 @@ def get_new_path (path, where):
     where = where[1:]
     if not where:
         return path 
-    where = where[1:]    # remove the slash
+    where = where[1:]
     return get_new_path (path, where)
     
 
@@ -57,7 +57,7 @@ while True:
     where = where.replace ("/", "@/@").split("@")
     where = [item for item in where if item != '']
 
-    if where[0] == '/':    # ignore current path, where has the absolute destination path
+    if where[0] == '/':
         path = ''.join(where)
         print (path)
         continue
